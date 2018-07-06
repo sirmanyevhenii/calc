@@ -1,12 +1,12 @@
-document.querySelectorAll('.number')
-    .forEach( el => el.addEventListener('click', clickNumber) );
+document.querySelectorAll('.light')
+    .forEach( el => el.addEventListener('click', operationLight) );
 document.querySelector('.all-clean').addEventListener('click', operationClean);
 document.querySelector('.calc').addEventListener('click', operationCalc);
 document.querySelector('.sqrt').addEventListener('click', operationSqrt);
 document.querySelector('.power').addEventListener('click', operationPower);
 const display = document.querySelector('.display');
 
-function clickNumber(event) {
+function operationLight(event) {
     display.value += event.target.innerText;
 }
 
